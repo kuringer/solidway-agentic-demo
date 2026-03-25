@@ -25,7 +25,7 @@ function addToolCall(toolName, params, status = 'running') {
 	const msg = document.createElement('div');
 	msg.className = 'msg msg--ai';
 	msg.innerHTML = `
-		<div class="tool-call" id="${id}">
+		<div class="tool-call tool-call--collapsed" id="${id}">
 			<div class="tool-call__header" onclick="this.parentElement.classList.toggle('tool-call--collapsed')" style="cursor:pointer">
 				<span class="tool-call__icon">&#9881;</span>
 				${toolName}
@@ -83,11 +83,7 @@ function completeToolCall(id, duration) {
 		statusEl.className = 'tool-call__status tool-call__status--done';
 		statusEl.innerHTML = '&#10003; Hotovo' + (duration ? ` (${duration})` : '');
 	}
-	// Collapse after completing
-	const toolEl = document.getElementById(id);
-	if (toolEl) {
-		setTimeout(() => toolEl.classList.add('tool-call--collapsed'), 300);
-	}
+
 }
 
 function addProductCards(products, showPartnerPrice = false) {
