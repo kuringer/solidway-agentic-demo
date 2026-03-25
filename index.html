@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solidway - AI Asistent nakupovania</title>
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/chat.css">
+<link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+
+<!-- B2B Top Bar -->
+<div class="header-top-b2b">
+	<div class="header-top-b2b__inner">
+		<div class="header-top-b2b__left">
+			<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+			Prihlásený: <span class="header-top-b2b__partner">StavPro s.r.o.</span>
+			&middot; Partner #2847
+		</div>
+		<div class="header-top-b2b__right">
+			<a href="#">Môj účet</a>
+			<a href="#">Objednávky</a>
+			<a href="#">Cenové ponuky</a>
+			<a href="#">Odhlásiť sa</a>
+		</div>
+	</div>
+</div>
+
+<!-- Header -->
+<div class="header">
+	<div class="header__inner">
+		<a class="header__logo" href="#">
+			<svg width="172" height="24" viewBox="0 0 172 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M9.99525 0.376221C15.4035 0.376221 19.1357 2.80625 19.1357 7.29245V8.59253H13.7611V7.29245C13.7611 5.65003 12.4274 4.62299 9.96165 4.62299H9.55209C7.12206 4.62299 5.78628 5.58072 5.78628 6.81359V7.15593C5.78628 8.66184 6.91623 9.1407 11.5369 10.2371C16.9115 11.5392 19.5137 13.3182 19.5137 17.1533V17.4956C19.5137 21.1921 16.4326 24.0002 10.031 24.0002H9.55209C3.18403 24.0002 0 21.1585 0 16.6408V15.4437H5.40823V16.6408C5.40823 18.8671 6.88053 19.7555 9.6193 19.7555H10.031C12.6668 19.7555 14.0698 18.9343 14.0698 17.5292V17.2562C14.0698 15.8532 12.7004 15.1349 7.94117 14.0722C2.9782 12.9779 0.375951 11.2305 0.375951 7.43107V6.9165C0.375951 2.77474 3.83302 0.376221 9.51639 0.376221H9.99525Z" fill="#323E48"/>
+				<path d="M33.3106 0.376221C39.37 0.376221 43.5453 3.56025 43.5453 9.65528V14.8241C43.5453 20.8834 39.37 23.9981 33.3106 23.9981H32.6932C26.6338 23.9981 22.3892 20.8813 22.3892 14.8241V9.65528C22.3892 3.56025 26.6002 0.376221 32.6932 0.376221H33.3106ZM27.9024 9.8254V14.5153C27.9024 17.5965 29.5805 19.2389 32.6953 19.2389H33.2434C36.3245 19.2389 38.0363 17.5965 38.0363 14.5153V9.8254C38.0363 6.81149 36.3245 5.13547 33.2434 5.13547H32.6953C29.5805 5.13547 27.9024 6.81359 27.9024 9.8254Z" fill="#323E48"/>
+				<path d="M52.6904 0.717651V19.1014H63.1645V23.6548H47.2129V0.717651H52.6904Z" fill="#323E48"/>
+				<path d="M72.2645 0.717651H66.7954V23.6527H72.2645V0.717651Z" fill="#323E48"/>
+				<path d="M86.0027 0.717651C92.5409 0.717651 96.2038 3.42282 96.2038 10.234V14.275C96.2038 20.9161 92.6102 23.6548 86.0027 23.6548H76.417V0.717651H86.0027ZM81.8609 19.1014H86.0027C89.3568 19.1014 90.6926 17.6627 90.6926 14.275V10.234C90.6926 6.77697 89.3904 5.27106 86.0027 5.27106H81.8609V19.1014Z" fill="#323E48"/>
+				<path d="M103.395 0.717651L106.1 18.108H107.127L109.899 0.717651H118.149L120.924 18.108H122.018L124.62 0.717651H129.344L125.887 23.6548H117.021L114.247 6.22879H113.254L110.483 23.6548H101.786L98.1924 0.717651H103.395Z" fill="#323E48"/>
+				<path d="M144.991 0.717651L152.214 23.6548H146.873L145.331 18.7948H136.124L134.582 23.6548H129.55L136.739 0.717651H144.989H144.991ZM137.529 14.3086H143.93L141.261 5.92215H140.131L137.529 14.3086Z" fill="#323E48"/>
+				<path d="M159.739 9.00937L154.801 0.723755H149.017L157.54 14.6906V23.663H163.018V14.3105L159.739 9.00937Z" fill="#323E48"/>
+				<path d="M171.1 2.81228C171.173 6.54239 168.269 9.64031 164.568 9.82513C164.158 8.96822 163.923 8.01679 163.904 7.00865C163.831 3.27854 166.74 0.182725 170.438 0C170.846 0.852715 171.081 1.80414 171.1 2.81438" fill="#A5CE39"/>
+			</svg>
+			<span class="header__ai-badge">AI Asistent</span>
+		</a>
+		<div class="header__right">
+			<nav class="header__nav">
+				<a href="#">Podlahy</a>
+				<a href="#">Príslušenstvo</a>
+				<a href="#">Akcie</a>
+				<a href="#">Showroom</a>
+			</nav>
+			<button class="header__cart-btn" id="headerCartBtn">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+					<path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+				</svg>
+				Košík
+				<span class="header__cart-badge" id="headerCartBadge" data-count="0"></span>
+			</button>
+		</div>
+	</div>
+</div>
+
+<!-- App -->
+<div class="app">
+	<!-- Chat -->
+	<div class="chat">
+		<div class="chat__header">
+			<span class="chat__status"></span>
+			<div>
+				<div class="chat__title">Solidway Asistent</div>
+				<div class="chat__subtitle">B2B nakupovanie s AI</div>
+			</div>
+		</div>
+		<div class="chat__messages" id="messages"></div>
+		<div class="suggestions" id="suggestions"></div>
+		<div class="chat__input-area">
+			<textarea class="chat__input" id="chatInput" placeholder="Napíšte, čo potrebujete..." rows="1"></textarea>
+			<button class="chat__send" id="sendBtn" title="Odoslať">
+				<svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<line x1="22" y1="2" x2="11" y2="13"></line>
+					<polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+				</svg>
+			</button>
+		</div>
+	</div>
+
+	<!-- Cart -->
+	<div class="cart-panel" id="cartPanel">
+		<div class="cart-panel__header">
+			<div class="cart-panel__title">Košík <span class="cart-panel__count" id="cartCount">(0)</span></div>
+		</div>
+		<div class="cart-sync-banner" id="cartSyncBanner" style="display:none">
+			<span class="cart-sync-banner__spinner"></span>
+			Overujem partnerské ceny...
+		</div>
+		<div class="cart-panel__empty" id="cartEmpty">
+			<div class="cart-panel__empty-icon">&#128722;</div>
+			Košík je prázdny.<br>Povedzte asistentovi, čo potrebujete.
+		</div>
+		<div class="cart-panel__items" id="cartItems"></div>
+		<div class="cart-summary" id="cartSummary" style="display:none">
+			<div class="cart-summary__row">
+				<span class="cart-summary__label">Medzisúčet</span>
+				<span class="cart-summary__val" id="cartSubtotal">0,00 &euro;</span>
+			</div>
+			<div class="cart-summary__row">
+				<span class="cart-summary__label">Doprava</span>
+				<span class="cart-summary__val" id="cartShipping">--</span>
+			</div>
+			<div class="cart-summary__row cart-summary__row--total">
+				<span class="cart-summary__label" id="cartTotalLabel">Spolu bez DPH</span>
+				<span class="cart-summary__val" id="cartTotal">0,00 &euro;</span>
+			</div>
+			<div class="cart-summary__tax">DPH bude vypočítaná v ďalších krokoch</div>
+		</div>
+		<div class="cart-panel__actions" id="cartActions" style="display:none">
+			<button class="btn btn--primary btn--fit">Pokračovať k objednávke</button>
+			<button class="btn btn--secondary btn--fit">Vytvoriť cenovú ponuku</button>
+		</div>
+	</div>
+</div>
+
+<script src="js/products.js"></script>
+<script src="js/chat.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/scenario.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
